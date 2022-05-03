@@ -1,0 +1,36 @@
+﻿@model DrawViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Draw Page</h1>
+<form method="post">
+    <div asp-validation-summary="All" class="alert-danger"></div>
+<br />
+    Select 
+    <input asp-for="NumberOfEntrants" class="pgreen numbox">
+    lucky winners!
+<br />
+<br />
+<input type="submit" value="Go!" class="btn"/>
+
+    @if (Model != null)
+    {
+        @if (Model.Winners != null)
+        {
+            <br /><br>
+            <h1>
+                @ViewBag.Message
+            </h1>
+            <div class="winners">
+                @foreach (Entrant entrant in Model.Winners)
+                {
+                    <span>@entrant.EntrantFirstName @entrant.EntrantSurname</span>
+                    <br />
+                }
+            </div>
+            <a asp-action="Index">Draw Again</a>
+        }
+    }
+</form>
+

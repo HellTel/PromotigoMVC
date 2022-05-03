@@ -1,0 +1,92 @@
+:root {
+    --p-green-color: #95c122;
+    --p-main-color: #3e363f;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    color: var(--p-main-color);
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--p-green-color)
+}
+
+.menu {
+    margin: auto;
+}
+
+.menuitem {
+    display: inline-block;
+    font-size: 40px;
+    color: var(--p-main-color);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.pgreen {
+    color: var(--p-green-color);
+}
+
+.numbox {
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    width:55px;
+}
+
+.btn {
+     transition-duration: 0.4s;
+   border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--p-green-color);
+    color: white;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #000000;
+        color:white;
+    }
+
+.winners {
+    border: 2px solid var(--p-green-color);
+    background-color: #f0fff0;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.valsumm {
+    border: 2px solid red;
+    background-color: #fff0f0;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+
